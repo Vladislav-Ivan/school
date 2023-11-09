@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Nunito';
+    font-weight: normal ;
+   src: url(fonts/Nunito/static/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: bold;
+    src: url(fonts/Nunito/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito/static/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito/static/Nunito-ExtraBold.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito';
+    background-color: #f9f9f9;
+}
+.heder {
+ border: 1px solid #ffab08;
+ background-color: #ffab08;
+ border-bottom-left-radius: 100%;
+ border-bottom-right-radius: 100%;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header_possition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.target {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text_target_burger {
+    font-size: 50px;
+    line-height: 120%;
+    color: #ffffff;
+}
+
+.burger_target  {
+    opacity: 0;
+    transform: translateX(-150px);
+    margin-bottom: 63px;
+}
+
+.burger_target.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+
+.text_target_burger span {
+   color: #ff5c00;
+}
+
+.text_target {
+    transform: translateX(-200px);
+    opacity: 0;
+    position: relative;
+    bottom: 40px;
+    padding-left: 21;
+    line-height: 120%;
+    font-family: 'Nunito';
+
+}
+
+.text_target.active{
+ opacity: 1;
+ transform: translateX(0);
+ transition: all 3s;
+ z-index: 1000;
+}
+
+.text_target_delivery {
+    font-size: 16px;
+    font-weight: 400; 
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul_nav{
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+    width: 121px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.ul_nav:hover {
+    background-color: #ffab08;
+    transition: all 0.9s;
+}
+
+.ul_nav li {
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-end;
+   padding-top: 5%;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+
+.col {
+    margin-top: 15px;
+    position: relative;
+    left: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.card-mb-4  {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    width: 300px;
+    height: 411px;
+    border-radius: 5%;
+}
+
+.details_wrapper {
+    position: absolute;
+    transform: translateX(215px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+
+
+}
+
+.items_curent_wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f9f9f9;
+    background-color: #f9f9f9;
+    width: 70px;
+    height: 30px;
+    border-radius: 10%;
+
+}
+
+
+
+.items_cauntres {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card_center_position {
+margin: 12px;
+}
+
+.btn {
+border: 1px solid #f9f9f9;
+background-color: #f9f9f9;
+width: 276px;
+height: 40px;
+border-radius: 12px;
+position: relative;
+left: 10px;
+
+}
+
+
+.aside { 
+position: relative;
+width: 300px;;
+  bottom: 850px;
+  left: 200px;
+
+}
+
+.aside_container {
+    background-color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 300px;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.counter_aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line {
+    border: 1.3px solid #f9f9f9;
+    width: 250px;
+    position: relative;
+    left: 25px;
+}
+
+.img_elem img {
+    display: flex;
+    margin-left: 10px;
+    justify-content: flex-start;
+    width: 64px ;
+    height: 52px;
+    border-radius: 8px;
+  
+
+}
+.possition_info_elm {
+    display:flex ;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.elements_corzina {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.card_item {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.text_name_burger {
+    margin-bottom: 0;
+    margin-top: 0;
+   
+}
+
+.price_curent {
+    padding-left: 7px;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.delivery_btn{
+    display: flex;
+    justify-content: center;
+}
+.btn_delivery {
+    border: 1px solid #ff7020;
+    width: 263px;
+    height: 48px;
+    background-color: #ff7020;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
